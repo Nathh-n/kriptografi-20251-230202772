@@ -8,21 +8,21 @@ Dengan demikian, kriptografi dapat dianggap sebagai “penjaga tak terlihat” y
 
 
 QUIZ:
-1. Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
-2. Sebutkan algoritma kunci publik yang populer digunakan saat ini.
-3. Apa perbedaan utama antara kriptografi klasik dan kriptografi modern?
+1.Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
+2.Sebutkan algoritma kunci publik yang populer digunakan saat ini.
+3.Apa perbedaan utama antara kriptografi klasik dan kriptografi modern?
 
-1. Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie dan Martin Hellman.
+1.Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie dan Martin Hellman.
 Pada tahun 1976, mereka memperkenalkan konsep kriptografi kunci publik (public-key cryptography) melalui publikasi berjudul “New Directions in Cryptography”.
 Konsep ini menjadi landasan utama bagi sistem keamanan digital modern, termasuk komunikasi terenkripsi di internet.
 
-2. Beberapa algoritma kunci publik yang populer digunakan hingga saat ini antara lain:
+2.Beberapa algoritma kunci publik yang populer digunakan hingga saat ini antara lain:
 - RSA (Rivest–Shamir–Adleman)
 - ECC (Elliptic Curve Cryptography)
 - DSA (Digital Signature Algorithm)
 - Diffie–Hellman Key Exchange
 Dari keempatnya, RSA dan ECC merupakan algoritma yang paling banyak digunakan dalam berbagai sistem keamanan digital seperti HTTPS, tanda tangan digital, dan enkripsi email.
 
-3. Perbedaan utama antara kriptografi klasik dan kriptografi modern terletak pada media penggunaan, jenis kunci, serta tingkat keamanannya. Kriptografi klasik umumnya digunakan untuk teks biasa atau pesan manual dan hanya menggunakan satu kunci yang sama (simetris) untuk proses enkripsi maupun dekripsi. Contoh metode yang termasuk dalam kriptografi klasik adalah Caesar Cipher dan Vigenère Cipher.
+3.Perbedaan utama antara kriptografi klasik dan kriptografi modern terletak pada media penggunaan, jenis kunci, serta tingkat keamanannya. Kriptografi klasik umumnya digunakan untuk teks biasa atau pesan manual dan hanya menggunakan satu kunci yang sama (simetris) untuk proses enkripsi maupun dekripsi. Contoh metode yang termasuk dalam kriptografi klasik adalah Caesar Cipher dan Vigenère Cipher.
 
 Sementara itu, kriptografi modern diterapkan pada data digital dan sistem komputer, serta menggunakan dua kunci berbeda yaitu kunci publik dan kunci privat (asimetris). Algoritma yang umum digunakan dalam kriptografi modern antara lain RSA, AES, dan ECC. Dari segi keamanan, kriptografi klasik bergantung pada kerahasiaan algoritmanya sehingga relatif mudah dipecahkan oleh komputer modern. Sebaliknya, kriptografi modern mengandalkan kerahasiaan kunci serta kekuatan perhitungan matematis, menjadikannya lebih kuat dan banyak digunakan dalam sistem keamanan jaringan serta komunikasi digital saat ini.
