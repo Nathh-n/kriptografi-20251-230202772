@@ -30,12 +30,12 @@ Memasuki era digital dan desentralisasi data, kriptografi terus berevolusi menja
 Konsep dasar Confidentiality, Integrity, dan Availability (CIA) merupakan tiga komponen utama dalam keamanan informasi yang saling melengkapi untuk menjaga data dan sistem tetap terlindungi serta dapat diandalkan. Confidentiality (kerahasiaan) berkaitan dengan upaya memastikan bahwa informasi hanya dapat diakses oleh pihak yang memiliki izin, sehingga privasi data tetap terjaga. Prinsip ini mencegah kebocoran atau akses tidak sah melalui mekanisme seperti penggunaan kata sandi, enkripsi, dan pengaturan hak akses. Integrity (integritas) menitikberatkan pada keaslian serta keutuhan informasi, yakni memastikan data tidak dimodifikasi, dirusak, atau diubah tanpa otorisasi. Dengan demikian, integritas menjamin akurasi serta konsistensi data, biasanya melalui penerapan hashing, tanda tangan digital, atau sistem audit untuk melacak perubahan. Sementara itu, Availability (ketersediaan) menegaskan pentingnya informasi dan sistem agar selalu dapat diakses oleh pengguna yang sah kapan pun diperlukan. Upaya ini dilakukan dengan menjaga keandalan sistem, melakukan pencadangan secara rutin, serta melindungi layanan dari gangguan seperti serangan DDoS. Secara keseluruhan, ketiga elemen CIA membentuk landasan yang kuat dalam menjaga keamanan informasi: kerahasiaan menjamin akses terbatas pada pihak berwenang, integritas memastikan data tetap benar dan utuh, sementara ketersediaan menjamin aksesibilitas informasi setiap saat. Oleh karena itu, CIA menjadi pilar fundamental dalam penerapan keamanan informasi di berbagai sektor, mulai dari komunikasi digital, perbankan, hingga sistem pemerintahan.
 
 # dokumentasi
-![repo_setup](screenshots/repo_setup.png)
+![repo_setup](screenshot/repo_setup.png)
 
 # QUIZ
-1.Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
-2.Sebutkan algoritma kunci publik yang populer digunakan saat ini.
-3.Apa perbedaan utama antara kriptografi klasik dan kriptografi modern?
+1. Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
+2. Sebutkan algoritma kunci publik yang populer digunakan saat ini.
+3. Apa perbedaan utama antara kriptografi klasik dan kriptografi modern?
 
 1.Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie dan Martin Hellman.
 Pada tahun 1976, mereka memperkenalkan konsep kriptografi kunci publik (public-key cryptography) melalui publikasi berjudul “New Directions in Cryptography”.
