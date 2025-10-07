@@ -51,3 +51,13 @@ Dari keempatnya, RSA dan ECC merupakan algoritma yang paling banyak digunakan da
 3.Perbedaan utama antara kriptografi klasik dan kriptografi modern terletak pada media penggunaan, jenis kunci, serta tingkat keamanannya. Kriptografi klasik umumnya digunakan untuk teks biasa atau pesan manual dan hanya menggunakan satu kunci yang sama (simetris) untuk proses enkripsi maupun dekripsi. Contoh metode yang termasuk dalam kriptografi klasik adalah Caesar Cipher dan Vigenère Cipher.
 
 Sementara itu, kriptografi modern diterapkan pada data digital dan sistem komputer, serta menggunakan dua kunci berbeda yaitu kunci publik dan kunci privat (asimetris). Algoritma yang umum digunakan dalam kriptografi modern antara lain RSA, AES, dan ECC. Dari segi keamanan, kriptografi klasik bergantung pada kerahasiaan algoritmanya sehingga relatif mudah dipecahkan oleh komputer modern. Sebaliknya, kriptografi modern mengandalkan kerahasiaan kunci serta kekuatan perhitungan matematis, menjadikannya lebih kuat dan banyak digunakan dalam sistem keamanan jaringan serta komunikasi digital saat ini.
+
+## Commit Log
+(Tuliskan bukti commit Git yang relevan.  
+```
+commit abc12345
+Author: Nur Fatahillah <dneth001@gmail.com>
+Date:   2025-09-20
+
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
