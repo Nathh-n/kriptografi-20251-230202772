@@ -1,14 +1,17 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 2  
+Topik: Kripto Sistem
+Nama: Nur Fatahillah
+NIM: 230202772  
+Kelas: 5IKRB 
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
+2. Menggambarkan proses enkripsi dan dekripsi sederhana.
+3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+
 
 ---
 
@@ -19,10 +22,10 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
+
+- Visual Studio Code  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Library tambahan
 
 ---
 
