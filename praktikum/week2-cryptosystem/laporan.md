@@ -16,8 +16,31 @@ Kelas: 5IKRB
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Komponen Kriptosistem
+
+Kriptosistem adalah suatu sistem yang digunakan dalam kriptografi untuk menjaga keamanan data melalui proses enkripsi dan dekripsi. Dalam sebuah kriptosistem terdapat beberapa komponen utama yang saling berkaitan. Komponen pertama adalah plaintext, yaitu pesan atau data asli yang masih dapat dibaca sebelum disandikan. Komponen kedua adalah ciphertext, yakni hasil dari proses enkripsi yang berupa pesan tersandi dan tidak dapat dibaca tanpa kunci yang sesuai. Proses perubahan dari plaintext menjadi ciphertext dilakukan oleh algoritma enkripsi, yaitu prosedur matematis yang digunakan untuk menyembunyikan isi pesan. Sebaliknya, untuk mengembalikan ciphertext menjadi pesan semula digunakan algoritma dekripsi. Kedua proses ini bergantung pada kunci (key), yaitu nilai rahasia yang digunakan untuk mengontrol proses enkripsi dan dekripsi. Tanpa kunci yang tepat, pesan tidak dapat dikembalikan ke bentuk aslinya. Dengan demikian, kelima komponen tersebut plaintext, ciphertext, algoritma enkripsi, algoritma dekripsi, dan kunci bekerja sama untuk memastikan kerahasiaan, integritas, serta keaslian informasi dalam sistem komunikasi yang aman.
+
+
+Klasifikasi Simetris & Asimetris
+
+Kriptografi Simetris
+Kriptografi simetris adalah metode enkripsi yang menggunakan satu kunci yang sama untuk proses enkripsi (mengubah data menjadi sandi) dan dekripsi (mengembalikan sandi menjadi data asli).
+Artinya, pengirim dan penerima pesan harus memiliki kunci rahasia yang sama dan menjaganya agar tidak bocor.
+Contoh algoritma Simetris :
+- AES (Advanced Encryption Standard)
+- DES (Data Encryption Standard)
+- 3DES (Triple DES)
+- Blowfish
+
+Kriptografi Asimetris
+Kriptografi asimetris menggunakan dua kunci berbeda tetapi saling berhubungan secara matematis:
+- Kunci publik (public key) → digunakan untuk enkripsi
+- Kunci privat (private key) → digunakan untuk dekripsi
+Kunci publik dapat dibagikan kepada siapa pun, sedangkan kunci privat harus dijaga kerahasiaannya.
+Contoh algoritma asimetris:
+- RSA (Rivest–Shamir–Adleman)
+- ECC (Elliptic Curve Cryptography)
+- DSA (Digital Signature Algorithm)
 
 ---
 
@@ -25,7 +48,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 - Visual Studio Code  
 - Git dan akun GitHub  
-- Library tambahan
+- Figma
 
 ---
 
@@ -39,60 +62,100 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+import random
+
+CHARSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+def generate_key(seed):
+    """Membangkitkan kunci acak deterministik dari seed (key)"""
+    random.seed(seed)
+    shuffled = list(CHARSET)
+    random.shuffle(shuffled)
+    return ''.join(shuffled)
+
+def encrypt(plaintext, key):
+    enc_table = generate_key(key)
+    result = ""
+    for char in plaintext:
+        if char in CHARSET:
+            index = CHARSET.index(char)
+            result += enc_table[index]
+        else:
+            result += char  # spasi & simbol tetap
+    return result
+
+def decrypt(ciphertext, key):
+    enc_table = generate_key(key)
+    result = ""
+    for char in ciphertext:
+        if char in enc_table:
+            index = enc_table.index(char)
+            result += CHARSET[index]
+        else:
+            result += char
+    return result
+
+
+if __name__ == "__main__":
+    message = "Nur Fatahillah 230202772"
+    key = 5
+
+    enc = encrypt(message, key)
+    dec = decrypt(enc, key)
+
+    print("Plaintext :", message)
+    print("Ciphertext:", enc)
+    print("Decrypted :", dec)
+
 ```
-)
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+![diagram_kriptosistem](screenshots/diagram_kriptosistem.png)
+![Hasil eksekusi](screenshots/hasil_eksekusi.png)
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+## 7. Jawaban Pertanyaan  
+1. Komponen utama dalam kriptosistem
+    
+Komponen utama dalam sebuah kriptosistem terdiri dari lima bagian, yaitu:
+- Plaintext – pesan asli yang masih bisa dibaca sebelum dienkripsi.
+- Ciphertext – hasil dari proses enkripsi berupa pesan yang telah disandikan.
+- Algoritma Enkripsi – prosedur atau metode matematis untuk mengubah plaintext menjadi ciphertext.
+- Algoritma Dekripsi – proses kebalikan dari enkripsi yang mengembalikan ciphertext menjadi plaintext.
+- Kunci (Key) – nilai rahasia yang digunakan untuk mengontrol proses enkripsi dan dekripsi agar hanya pihak berwenang yang dapat membaca pesan.
+
+Kelima komponen ini bekerja bersama untuk menjaga kerahasiaan, integritas, dan keaslian data dalam suatu sistem keamanan informasi.
+
+2. Kelebihan dan Kelemahan Sistem Simetris Dibandingkan Asimetris
+Kelebihan kriptografi simetris:
+- Proses enkripsi dan dekripsi lebih cepat, karena algoritmanya sederhana dan efisien.
+- Membutuhkan sumber daya komputasi yang lebih kecil, sehingga cocok untuk data dalam jumlah besar.
+  
+3. Mengapa Distribusi Kunci Menjadi Masalah Utama dalam Kriptografi Simetris
+Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena sistem ini menggunakan satu kunci yang sama untuk enkripsi dan dekripsi. Artinya, kunci tersebut harus dibagikan terlebih dahulu kepada pihak penerima sebelum komunikasi dapat dilakukan. Proses pengiriman kunci ini berpotensi disadap oleh pihak ketiga, sehingga kerahasiaan pesan bisa terancam jika kunci bocor. Selain itu, dalam jaringan dengan banyak pengguna, jumlah kunci yang harus dikelola akan meningkat secara eksponensial, membuat sistem sulit diatur dan kurang efisien. Oleh karena itu, sistem asimetris sering digunakan untuk membantu menyebarkan kunci simetris secara aman dalam praktik modern (seperti pada protokol HTTPS).
+
+
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kriptosistem merupakan sistem yang berfungsi menjaga keamanan data melalui proses enkripsi dan dekripsi dengan lima komponen utama, yaitu plaintext, ciphertext, algoritma enkripsi, algoritma dekripsi, dan kunci. Kelima komponen tersebut bekerja sama untuk memastikan kerahasiaan, keaslian, serta integritas informasi. Berdasarkan jenisnya, kriptografi terbagi menjadi dua, yaitu kriptografi simetris dan asimetris. Kriptografi simetris menggunakan satu kunci yang sama untuk proses enkripsi dan dekripsi, sehingga lebih cepat namun memiliki kelemahan dalam distribusi kunci. Sementara itu, kriptografi asimetris menggunakan dua kunci berbeda, yaitu kunci publik untuk enkripsi dan kunci privat untuk dekripsi, yang lebih aman dalam pertukaran kunci meskipun prosesnya lebih lambat. Dalam penerapan modern, kedua jenis kriptografi ini sering digunakan secara bersamaan untuk menciptakan sistem keamanan data yang efisien dan kuat, seperti pada komunikasi internet yang menggunakan protokol HTTPS.
 
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
 
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit Week2
+Author: Nur Fatahillah <dneth002@gmail.com>
+Date:   2025-10-12
+
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan
 ```
