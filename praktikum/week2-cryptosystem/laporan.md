@@ -53,11 +53,13 @@ Contoh algoritma asimetris:
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
 1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python caesar_cipher.py`
+4. Membuat diagram kriptosistem di figma
+5. Membuat folder praktikum/week2-cryptosystem/ berisi laporan.md dan folder screenshots.
+6. Menulis ringkasan materi singkat.
+7. Menjawab quiz
 
 ---
 
