@@ -134,6 +134,10 @@ Kelima komponen ini bekerja bersama untuk menjaga kerahasiaan, integritas, dan k
 Kelebihan kriptografi simetris:
 - Proses enkripsi dan dekripsi lebih cepat, karena algoritmanya sederhana dan efisien.
 - Membutuhkan sumber daya komputasi yang lebih kecil, sehingga cocok untuk data dalam jumlah besar.
+Kelemahan kriptografi simetris:
+- Distribusi kunci sulit dan berisiko, karena pengirim dan penerima harus memiliki kunci yang sama dan menjaganya agar tidak bocor.
+- Tidak cocok untuk komunikasi jarak jauh atau banyak pihak, karena semakin banyak pengguna, semakin rumit pengelolaan kuncinya.
+- Kurang aman dibandingkan sistem asimetris jika kunci berhasil disadap, maka seluruh komunikasi bisa dibaca.
   
 3. Mengapa Distribusi Kunci Menjadi Masalah Utama dalam Kriptografi Simetris
 Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena sistem ini menggunakan satu kunci yang sama untuk enkripsi dan dekripsi. Artinya, kunci tersebut harus dibagikan terlebih dahulu kepada pihak penerima sebelum komunikasi dapat dilakukan. Proses pengiriman kunci ini berpotensi disadap oleh pihak ketiga, sehingga kerahasiaan pesan bisa terancam jika kunci bocor. Selain itu, dalam jaringan dengan banyak pengguna, jumlah kunci yang harus dikelola akan meningkat secara eksponensial, membuat sistem sulit diatur dan kurang efisien. Oleh karena itu, sistem asimetris sering digunakan untuk membantu menyebarkan kunci simetris secara aman dalam praktik modern (seperti pada protokol HTTPS).
