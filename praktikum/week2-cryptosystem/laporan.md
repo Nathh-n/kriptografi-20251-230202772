@@ -131,9 +131,11 @@ Komponen utama dalam sebuah kriptosistem terdiri dari lima bagian, yaitu:
 Kelima komponen ini bekerja bersama untuk menjaga kerahasiaan, integritas, dan keaslian data dalam suatu sistem keamanan informasi.
 
 2. Kelebihan dan Kelemahan Sistem Simetris Dibandingkan Asimetris
+
 Kelebihan kriptografi simetris:
 - Proses enkripsi dan dekripsi lebih cepat, karena algoritmanya sederhana dan efisien.
 - Membutuhkan sumber daya komputasi yang lebih kecil, sehingga cocok untuk data dalam jumlah besar.
+
 Kelemahan kriptografi simetris:
 - Distribusi kunci sulit dan berisiko, karena pengirim dan penerima harus memiliki kunci yang sama dan menjaganya agar tidak bocor.
 - Tidak cocok untuk komunikasi jarak jauh atau banyak pihak, karena semakin banyak pengguna, semakin rumit pengelolaan kuncinya.
