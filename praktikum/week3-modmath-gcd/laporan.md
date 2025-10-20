@@ -15,8 +15,15 @@ Kelas: 5IKRB
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+
+Arithmetic
+
+Teori modular arithmetic** atau aritmetika modular** adalah cabang matematika yang mempelajari operasi bilangan seperti penjumlahan, pengurangan, dan perkalian dalam sistem yang nilainya berulang setelah mencapai batas tertentu yang disebut modulus. Dua bilangan dikatakan kongruen dalam modulus ( n ) jika selisihnya merupakan kelipatan dari ( n ), yang ditulis sebagai ( a \equiv b \pmod{n} ). Misalnya, ( 17 \equiv 5 \pmod{12} ) karena ( 17 - 5 = 12 ), dan 12 habis dibagi 12. Konsep ini mirip dengan sistem jam, di mana setelah angka 12, jam akan kembali ke 1. Contohnya, jika jam menunjukkan pukul 9 dan ditambah 5 jam, hasilnya menjadi jam 2 karena ( 9 + 5 \equiv 2 \pmod{12} ). Dalam aritmetika modular, operasi-operasi seperti penjumlahan, pengurangan, dan perkalian dilakukan dengan mengambil sisa hasil bagi terhadap modulus. Misalnya, ( (7 + 8) \mod 10 = 5 ), ( (3 - 9) \mod 7 = 1 ), dan ( (4 \times 6) \mod 5 = 4 ). Aritmetika modular banyak digunakan dalam berbagai bidang, seperti kriptografi (misalnya dalam algoritma RSA untuk keamanan data), pemrograman komputer untuk menghitung nilai berulang, sistem waktu dan kalender, serta dalam teori bilangan untuk mempelajari sifat-sifat bilangan prima dan kongruensi.
+
+GCD
+
+GCD (Greatest Common Divisor) atau FPB (Faktor Persekutuan Terbesar) adalah bilangan terbesar yang dapat membagi habis dua atau lebih bilangan. Contohnya, GCD(12, 18) = 6. Nilai GCD dapat dihitung menggunakan Algoritma Euclidean, yaitu dengan cara membagi dua bilangan secara berulang hingga sisa pembagiannya nol. GCD penting dalam penyederhanaan pecahan, teori bilangan, serta digunakan dalam aritmetika modular untuk mencari invers modular, yaitu bilangan yang memiliki pasangan tertentu dalam operasi modulo.
+
 
 ---
 
@@ -28,11 +35,10 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `modular_math.py` di folder `praktikum/week3-modmath/src/modular_math.py`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python modular_math.py`.
+4. Screenshot hasil program dan di taruh ke dalam folder `praktikum/week3-modmath-gcd/screenshots/hasil.png`
 
 ---
 
