@@ -143,9 +143,9 @@ print("Decrypted :", dec)
 ---
 
 ## 6. Hasil dan Pembahasan
-![Hasil caesar](screenshots/caesar.png)
-![Hasil transpose](screenshots/transpose.png)
-![Hasil vignere](screenshots/vigenere.png)
+![Hasil caesar](screenshoots/caesar.png)
+![Hasil transpose](screenshoots/transpose.png)
+![Hasil vignere](screenshoots/vigenere.png)
 
 ---
 
