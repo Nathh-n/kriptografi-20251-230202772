@@ -67,7 +67,7 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 ---
 
 ## 6. Hasil dan Pembahasan
-![Hasil Eksekusi](screenshots/hasil.png)
+![Hasil](screenshots/hasil.png)
 
 ---
 
