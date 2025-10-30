@@ -33,11 +33,12 @@ Keamanan cipher klasik cukup terbatas karena sifatnya yang masih mempertahankan 
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat file `caesar.py` di folder `praktikum/week5-cipher-klasik/src/caesar.py`.
+2. Membuat file `transpose.py` di folder `praktikum/week5-cipher-klasik/src/transpose.py`.
+3. Membuat file `vigenere.py` di folder `praktikum/week5-cipher-klasik/src/vigenere.py`.
+4. Menyalin kode program dari panduan praktikum.
+5. Menjalan semua kode program
+6. Menaruh hasil eksekusi dari program ke dalam folder `screenshoot/`
 
 ---
 
