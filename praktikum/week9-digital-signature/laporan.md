@@ -22,7 +22,7 @@ Tanda tangan digital merupakan mekanisme kriptografi yang berfungsi untuk menjam
 
 ## 3. Alat dan Bahan
 - Python 3.x  
-- Visual Studio Code / editor lain  
+- Visual Studio Code/editor lain  
 - Git dan akun GitHub   
 
 ---
