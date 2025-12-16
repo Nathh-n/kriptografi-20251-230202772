@@ -89,7 +89,7 @@ print("Sertifikat digital berhasil dibuat: cert.pem")
 ---
 
 ## 8. Kesimpulan
-
+Dapat disimpulkan bahwa Public Key Infrastructure (PKI) merupakan fondasi utama dalam menjaga keamanan komunikasi digital melalui pengelolaan kunci publik dan sertifikat digital. Certificate Authority (CA) berperan penting sebagai pihak tepercaya yang memverifikasi identitas dan menjamin keaslian kunci publik, sehingga komunikasi dapat berlangsung dengan aman dan terpercaya. Penggunaan sertifikat yang diterbitkan CA juga menjadi kunci dalam mencegah ancaman keamanan seperti serangan Man-In-The-Middle (MITM), sedangkan penggunaan self-signed certificate tidak memadai untuk sistem produksi karena rendahnya tingkat kepercayaan. Oleh karena itu, PKI dan CA menjadi komponen krusial dalam penerapan keamanan pada layanan digital seperti TLS/HTTPS.
 ---
 
 ## 9. Daftar Pustaka
