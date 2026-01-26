@@ -60,7 +60,7 @@ contract TinyCoin is ERC20 {
 Hasil pengujian menunjukkan bahwa smart contract TinyCoin berhasil diimplementasikan sesuai standar ERC20. Fungsi name, symbol, decimals, dan totalSupply mengembalikan nilai yang sesuai dengan spesifikasi token. Token awal berhasil dimint ke akun pembuat kontrak.
 Hasil eksekusi program :
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](screenshots/image.png)
 
 ---
 
