@@ -61,7 +61,7 @@ Hasil eksekusi program menunjukkan bahwa algoritma MD5 menghasilkan nilai hash y
 
 Hasil eksekusi program :
 
-![Hasil Eksekusi](screenshots/image.png)
+![Hasil Eksekusi](screenshoots/image.png)
 
 ---
 
